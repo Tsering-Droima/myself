@@ -51,18 +51,44 @@ body {
     cursor: pointer;
   }
   
-  /* Responsive Design */
   @media (max-width: 768px) {
+  .navbar {
+    display: none;
+    flex-direction: column;
+    /* Remove these lines: */
+    /* position: absolute;
+    top: 60px;
+    left: 0; */
+    width: 100%;
+    background: #8B1E3F;
+  }
+
+  .navbar.open {
+    display: flex;
+  }
+
+  .navbar a {
+    padding: 10px 20px;
+    text-align: center;
+  }
+}
+
+  /*Responsive Design*/
+  @media (max-width: 768px) {
+
+      .header {
+    flex-direction: column;  /* Stack toggle + navbar vertically */
+    align-items: flex-start; /* Align everything to left */
+  }
+
     .menu-toggle {
       display: block;
+       align-self: flex-end; 
     }
   
     .navbar {
       display: none;
       flex-direction: column;
-      position: absolute;
-      top: 60px;
-      left: 0;
       width: 100%;
       background: #8B1E3F;
       /* padding: 10px 0; */
@@ -122,7 +148,9 @@ body {
     line-height: 1.6;
   }
   
-
+.jmCEXz {
+    min-height: 90vh;
+}
 
 
 
@@ -218,7 +246,7 @@ body {
 /* Ensure full screen minus header */
 .contact-container {
     display: flex;
-    height: calc(100vh - 60px); /* Adjust based on header height */
+    height: calc(100% - 60%); /* Adjust based on header height */
     width: 100vw;
     align-items: center;
     background-color: #FDF1E6;

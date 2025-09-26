@@ -1,22 +1,40 @@
 import React, { useEffect, useRef } from "react";
 import styled from "styled-components";
 
+
+
 const RightColumn = styled.div`
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  padding-bottom: 40px; /* <-- reserve space below carousel */
 
   @media (max-width: 768px) {
     margin-top: 40px;
+    padding-bottom: 30px;
   }
 `;
 
 const CarouselContainer = styled.div`
-  width: 100%;
+  // width: 90%;
+  // max-width: 1200px;
+  width: 95%;       /* full width */
+  max-width: 1600px; /* bigger container */
   overflow: hidden;
   position: relative;
+  height: 300px; /* reserve height for layout */
+  border: 2px solid #8b1e3f;
+  border-radius: 20px;
+  background-color: #fff;
+
+  @media (max-width: 1024px) {
+    height: 225px;
+  }
+  @media (max-width: 768px) {
+    height: 180px;
+  }
 `;
 
 const CarouselTrack = styled.div`

@@ -35,7 +35,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 40px;
-  min-height: 100vh;
+  min-height: 90vh;
   box-sizing: border-box;
 
   @media (max-width: 768px) {
@@ -164,6 +164,7 @@ const ImagePlaceholder = styled.div`
     aspect-ratio: 3 / 4;
   }
 `;
+
 // ---------- Main Component ----------
 const About = () => {
   return (
