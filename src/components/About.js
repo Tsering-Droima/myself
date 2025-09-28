@@ -174,7 +174,7 @@ const About = () => {
       <Container>
         {/* Left Column with Content */}
         <LeftColumn>
-          <Name>Pem Droima</Name>
+          <Name>Pem Dema</Name>
           <Subtitle>Model • Dreamer • History Enthusiast</Subtitle>
 
           <FollowButton
@@ -187,7 +187,7 @@ const About = () => {
 
           <Intro>
             Welcome to my little corner of the internet 💋 <br />
-            I'm <strong>Pem Droima</strong>, a model who loves blending beauty
+            I'm <strong>Pem Dema</strong>, a model who loves blending beauty
             with brains. When I'm not in front of the camera, you'll find me
             exploring the fascinating stories of history — from ancient empires
             to untold legends.
